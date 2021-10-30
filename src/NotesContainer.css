@@ -1,0 +1,16 @@
+#note {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 5px;
+}
+
+#note h4 {
+  margin: 0;
+}
+
+#noteHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

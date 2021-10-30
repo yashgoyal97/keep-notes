@@ -1,0 +1,75 @@
+h1,
+p {
+  font-family: Lato;
+}
+header {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 222, 113);
+}
+
+#modalDialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: rgb(255, 222, 113);
+  width: 40%;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.close-dialog-icon {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.add-notes-icon:hover,
+.add-notes-icon:focus,
+.save-button:hover,
+.save-button:focus,
+.close-dialog-icon:hover,
+.close-dialog-icon:focus {
+  cursor: pointer;
+}
+
+.input-text {
+  margin-top: 15px;
+  /* border: none; */
+  padding: 10px;
+  border-radius: 2px;
+}
+
+#titleInput {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#noteInput {
+  font-size: large;
+  height: 200px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
