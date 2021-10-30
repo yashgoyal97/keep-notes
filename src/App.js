@@ -55,7 +55,7 @@ function App() {
         <h1>Keep Notes</h1>
         <GrAddCircle
           className="add-notes-icon"
-          size={25}
+          size={30}
           onClick={handleAddNote}
         ></GrAddCircle>
       </header>
