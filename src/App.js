@@ -79,7 +79,7 @@ function App() {
             name="note"
             id="noteInput"
             className="input-text"
-            placeholder="Note"
+            placeholder="Note..."
             value={newNote.note}
             onChange={handleNoteChange}
             required
